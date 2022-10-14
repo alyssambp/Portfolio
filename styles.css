@@ -53,6 +53,16 @@ a {
     color: #A3B6CF;
 }
 
+.top-btn{
+    display: inline-block;
+    padding: 9px 30px;
+    background: #A3CCCF;
+    border: 2px solid #A3CCCF;
+    border-radius: 30px;
+    color: #30435C;
+    letter-spacing: 1px;
+}
+
 .hamburger{
     display: none;
     cursor: pointer;
@@ -72,6 +82,49 @@ a {
 section {
     padding: 5em 2em;
 }
+
+/*Work*/
+.home{
+    background-color: #FFFFFF ;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+
+.home .text-one{
+    color:#153647;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text-two{
+    font-size: 40px;
+    margin:5px 0;
+    color:#A3CCCF;
+}
+
+.social a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:#F6f5f1;
+    font-size: 24px;
+    margin-right: 22px;
+    margin-bottom: 30px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+    background:#A3CCCF;
+    transition: 0.5s;
+}
+
+
 /*About*/
 
 
@@ -96,11 +149,11 @@ footer {
     text-align: center;
   }
   
-  div.social {
+div.social {
     margin-top: 5px;
     letter-spacing: 2px;
     padding-bottom: 10px;
-  }
+} 
 
 
 @media(max-width:768px){
@@ -137,4 +190,11 @@ footer {
     .nav-menu.active{
         left: 0;
     }
+
+    .home-img{
+        min-width: 250px;
+        position: relative;
+        z-index:2
+    }
+
 }
