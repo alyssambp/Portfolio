@@ -30,6 +30,15 @@ a {
     text-decoration: none;
 }
 
+h1{
+    color: #30435C;
+}
+
+p {
+    color: #30435C;
+    margin-bottom: 1rem;
+}
+
 .navbar{
     min-height: 70px;
     display: flex;
@@ -53,7 +62,7 @@ a {
     color: #A3B6CF;
 }
 
-/* .top-btn{
+.top-btn{
     display: inline-block;
     padding: 9px 30px;
     background: #A3CCCF;
@@ -61,7 +70,7 @@ a {
     border-radius: 30px;
     color: #30435C;
     letter-spacing: 1px;
-} */
+} 
 
 .hamburger{
     display: none;
@@ -83,7 +92,7 @@ section {
     padding: 5em 2em;
 }
 
-/*Work*/
+/*Home*/
 .home{
     background-color: #FFFFFF ;
     /* position: relative;
@@ -109,15 +118,50 @@ section {
     margin-top: 5px;
     letter-spacing: 2px;
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 /*About*/
 #about{
     background-color: #FAF8F6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 15px;
+}
+.text-container h1{
+    font-size: 30px;
+    padding: 20px 0px;
 }
 
 
-/*Work*/
+/*Skills & Experience*/
 #skills_experience{
     background-color: #FFFFFF ;
 }
@@ -235,11 +279,6 @@ footer {
     padding: 15px 0;
   }
   
-/* div.social {
-    margin-top: 5px;
-    letter-spacing: 2px;
-    padding-bottom: 10px;
-}  */
 
 
 @media(max-width:768px){
@@ -276,6 +315,20 @@ footer {
     .nav-menu.active{
         left: 0;
     }
+
+    .wrapper{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 250px;
+        height: 250px;
+    }
+    .text-container {
+        align-items: center;
+    }
+
+
+
 
 	.contact-box{
 		grid-template-columns: 1fr;
