@@ -103,9 +103,10 @@ section {
 } */
 
 .home{
-    background-color: #FFFFFF ;
+    background-color: #386D9D ;
+    /* background-image: linear-gradient(#386D9D, #FCF5EF ); */
     text-align: center;
-    height: 450px;
+    height: 600px;
 }
 
 .home .text-one{
@@ -129,7 +130,7 @@ section {
 
 /*About*/
 #about{
-    background-color: #FAF8F6;
+    background-color: #FCF5EF;
     position: relative;
     display: flex;
     justify-content: center;
@@ -169,7 +170,7 @@ section {
 
 /*Skills & Experience*/
 #skills_experience{
-    background-color: #FFFFFF ;
+    background-color: #FCF5EF ;
 }
 
 /*Contact*/
