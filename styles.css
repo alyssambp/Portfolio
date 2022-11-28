@@ -1,43 +1,105 @@
-/*General CSS*/
 html {
     scroll-behavior: smooth;
 }
-  
+
+/*The below removes that default margin: 8px */  
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
-/*The above removes that default margin: 8px */
 
-header {
-    background-color:none;
+:root {
+    --main-background-color: #EBEBEB;
+    --accent-color-1: #1c1c1c ;
+    --accent-color-2: #EBEBEB ;
+    --accent-color-3: white;
+    --font-color-1: #1c1c1c;
+    --font-color-2: #EBEBEB;
+    --font-color-3: white;
+    --bar-color: #1c1c1c;
+    --link-hover: #A3B6CF;
 }
 
-body {
-    margin: 0;
-    font-family: 'Poppins' ,Helvetica, sans-serif;
-    background-color: #F6f5f1;
-    letter-spacing: 1px;
+/* Typography */
+h2, h3{
+    font-family: 'Lato' ,Helvetica, sans-serif;
+    color: var(--font-color-1);
+    margin-bottom: 50px;
+}
+
+a, p{
+    color: var(--font-color-1);
+    font-family:'Lato' ,Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 128px;
+  color: var(--font-color-3);
+}
+
+
+h2 {
+    font-size: 80px;
+}
+
+h3{
+    font-size: 55px
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color-1);
 }
 
 li {
-    list-style: none;
-}
-  
-a {
-    color: #386D9D;
-    text-decoration: none;
-} 
-
-h1, h2{
-    color: #386D9D;
+    list-style-type: none;
 }
 
 p {
-    color: #386D9D;
-    margin-bottom: 1rem;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+i {
+    color: var(--accent-color-1);
+    font-size: 200px;
+}
+
+
+body {
+    margin: 0;
+    letter-spacing: 1px;
+    background-color: var(--main-background-color);
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+section{
+    padding: 5em 2em; /* Equivalent 80px  32*/
+    height: 100vh; /* vh: 1/100th of the height of the viewport */
+}
+
+.social {
+    display: inline-block;
+    padding: 9px 30px;
+    margin-top: 5px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
     font-size: 20px;
+    /* position: fixed; */
+    top: 0; left: 0;
+}
+
+/* ------------- Individual Sections ------------- */
+/* LANDING PAGE */
+.landing_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/teal_background.jpg);
+    background-size: cover;
 }
 
 .navbar{
@@ -46,7 +108,6 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    background-color: #FFFFFF ;
 }
 
 .nav-menu{
@@ -56,22 +117,11 @@ p {
     gap: 60px;
 }
 
-
 .nav-link{
     transition: 0.3s ease-out;
 }
 .nav-link:hover{
-    color: #A3B6CF;
-}
-
-
-.social {
-    display: inline-block;
-    padding: 9px 30px;
-    margin-top: 5px;
-    letter-spacing: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    color: var(--link-hover);
 }
 
 .hamburger{
@@ -86,49 +136,21 @@ p {
     margin: 5px auto;
     -webkit-transition: all 0.3x ease-in-out;
     transition: all 0.3x ease-in-out;
-    background-color: #153647;
+    background-color: var(--bar-color);
 }
 
-/*SECTIONS*/
-section {
-    padding: 5em 2em;
-}
-
-/*Home*/
-
-.home{
-    background-color: #386D9D; 
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center;  */
-    /* height: 100vh; */
-    letter-spacing: 1px;
-    line-height:2
-}
-
-.home .text-one{
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-size: 120px;
-  margin: 5px 0;
-}
-.home .text-two{
-    font-size: 120px;
-    text-align: right;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
-    margin:5px 0;
-    color:#FFFFFF;
+#icon{
+    width: 250px;
+    height: 200px;
+    margin: 25px;
+    transition: all 0.4s ease-in-out;
 }
 
 
 
+/* ABOUT PAGE */
 
-
-/*About*/
 #about{
-    background-color: #FFFFFF;
     position: relative;
     display: flex;
     justify-content: center;
@@ -160,24 +182,17 @@ section {
     flex-direction: column;
     font-size: 15px;
 }
-.text-container h1{
-    font-size: 30px;
-    padding: 20px 0px;
-}
-
-
-/*Skills & Experience*/
-#skills_experience{
-    background-color: #FFFFFF ;
-}
 
 
 
 
 
-/*Contact*/
-#contact{
-    background-color: #FFFFFF;
+
+
+
+
+/* CONTACT PAGE */
+.contact {
     position: relative;
 	width: 100%;
 	height: 100%;
@@ -199,38 +214,18 @@ section {
 
 .contact-box{
 	max-width: 850px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	/* display: grid;
+	grid-template-columns: repeat(2, 1fr); */
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
-
-.left{
-	background: url("img/random.png") no-repeat center;
-	background-size: cover;
-	height: 100%;
-}
-
-.right{
-	padding: 25px 40px;
-}
-
-h2{
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
-}
-
-
 
 .field{
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
+	background-color:var(--accent-color-3);
 	padding: 0.5rem 1rem;
 	font-size: 1.1rem;
 	margin-bottom: 22px;
@@ -238,7 +233,8 @@ h2{
 }
 
 .field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-color-1);
+    color: var(--font-color-2);
 }
 
 textarea{
@@ -248,8 +244,8 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #A3CCCF;
-	color: #fff;
+	background-color: var(--accent-color-1);
+	color: var(--font-color-2);
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -258,7 +254,9 @@ textarea{
 }
 
 .btn:hover{
-    background-color: #27ae60;
+    background-color: var(--main-background-color);
+    color: var(--font-color-1);
+    border: 1px solid var(--accent-color-1);
 }
 
 .field:focus{
@@ -266,28 +264,30 @@ textarea{
     background-color: #fff;
 }
 
+
+
 /*Footer Section */
 footer {
     left: 0;
     bottom: 0;
     width: 100%;
     position: auto;
-    background-color: #FFFFFF;
-    color: #153647;
     text-align: center;
     padding: 15px 0;
-    
 }
 
 #Copyright {
     font-size: 12px
 }
-  
 
 
+
+/* ------------- Responsive Display ------------- */
 @media(max-width:768px){
 
     .hamburger{
+        position: fixed;
+        top: 0; right: 0;
         display: block;
     }
 
@@ -301,13 +301,18 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    a{
+        text-decoration: none;
+        color: var(--font-color-2);
+    }
+
     .nav-menu{
         position:fixed;
         left: -100%;
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color:#FFFFFF;
+        background-color: var(--accent-color-1);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -320,6 +325,20 @@ footer {
         left: 0;
     }
 
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    /* ABOUT PAGE */
     .wrapper{
         flex-direction: column;
     }
@@ -327,25 +346,7 @@ footer {
         width: 250px;
         height: 250px;
     }
-    .text-container {
-        align-items: center;
-    }
 
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
-	.left{
-		height: 200px;
-	}
 
-    .home .text-one{
-        font-size: 60px;
-        text-align: center;
-    }
-
-    .home .text-two{
-        font-size: 60px;
-        text-align: center;
-    }
 
 }

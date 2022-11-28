@@ -11,28 +11,15 @@
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
                 
     <style>
-        @import url('https://fonts.cdnfonts.com/css/poppins');
+        @import url('https://fonts.cdnfonts.com/css/lato');
     </style>
  
      
 </head>
 
-<header class="header">
-    <nav class="navbar">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#skills_experience" class="nav-link">Skills & Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-        </ul>
+
+<body>
+    <header>
         <div class="social">
             <a class="fa fa-linkedin fa-lg" aria-hidden="true"
               href="https://www.linkedin.com/in/alyssa-pagulayan/">
@@ -41,72 +28,70 @@
               href="https://github.com/alyssambp">
             </a>
         </div>
+    </header>
 
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-</header>
+    <Section class="landing_page" id="landing_page">
 
+      <h1>Alyssa Pagulayan</h1>
 
+        <nav class="navbar">
+            <ul class="nav-menu">
 
-<body>
-    <section class="home" id="home">
-        <div class="home-content">
-            <div class="home-text">
-              <div class="text-one">Alyssa</div>
-              <div class="text-two">Pagulayan</div>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills_experience" class="nav-link">Skills & Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul> 
+    
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </div>
-    </section>
+         </nav>        
 
-    <section class="about" id="about">
+         <!-- <img src="img/teal_background.jpg" alt="Teal Background" id="teal_background"> -->
+
+    </Section>
+
+    <Section class="about" id="about">
+       
         <div class="wrapper">
             <div class="image-container">
-                <img src="img/JapaneseWave2.png" alt="home image">
+              <img src="img/JapaneseWave2.png" alt="home image">
             </div>
 
             <div class="text-container">
-                <h1>About me</h1>
-                <p>
-                Hi! I'm Alyssa Pagulayan.
-                I'm an Associate Technology Specialist, currently exploring
+              <h2>About</h2>
+              <p>
+                 Hi! I'm Alyssa Pagulayan.
+             </p>  
+              <p>
+                 I'm an Associate Technology Specialist, currently exploring
                 a career path into UX Design and Front-End Development. 
-                </p>
+              </p> 
             </div>
+
         </div>
 
-    </section>
+    </Section >
 
-    <section class="skills_experience" id="skills_experience">
-        <h1>Skills & Experience</h1>
-        <h2>I have experience with these technologies</h2>
 
-        
-        
 
-    </section>
 
-    <section class="contact" id="contact">
-        <div class="contact-box">
-			<div class="left"></div>
-			<div class="right">
-				<h2>Get in contact</h2>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
-				<input type="text" class="field" placeholder="Phone">
-				<textarea placeholder="Message" class="field"></textarea>
-				<button class="btn">Send</button>
-			</div>
-		</div>
-    </section>
 
     <footer>
-        <p id="Copyright">Alyssa Pagulayan  Copyright &copy;2022</p>
+        <p id="Copyright">&copy;2022</p>
     </footer>
     
     <script src="js/scripts.js"></script>
-</body>
 </html>
