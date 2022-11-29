@@ -10,14 +10,14 @@ html {
 }
 
 :root {
-    --main-background-color: #EBEBEB;
-    --accent-color-1: #1c1c1c ;
+    --main-background-color: #fcfcfc;
+    --accent-color-1: #fcfcfc ;
     --accent-color-2: #EBEBEB ;
     --accent-color-3: white;
     --font-color-1: #1c1c1c;
     --font-color-2: #EBEBEB;
     --font-color-3: white;
-    --bar-color: #1c1c1c;
+    --bar-color: #fcfcfc;
     --link-hover: #A3B6CF;
 }
 
@@ -31,11 +31,14 @@ h2, h3{
 a, p{
     color: var(--font-color-1);
     font-family:'Lato' ,Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 h1 {
   font-size: 128px;
   color: var(--font-color-3);
+  text-shadow:rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-bottom: 40px;
 }
 
 
@@ -50,6 +53,9 @@ h3{
 a {
     text-decoration: none;
     color: var(--font-color-1);
+    background-color: var(--accent-color-3);
+    border-radius: 25px;
+    padding: 14px 25px;
 }
 
 li {
@@ -57,7 +63,6 @@ li {
 }
 
 p {
-    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -81,14 +86,12 @@ section{
 }
 
 .social {
-    display: inline-block;
     padding: 9px 30px;
     margin-top: 5px;
-    letter-spacing: 5px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    /* position: fixed; */
-    top: 0; left: 0;
+    letter-spacing: 2.5px;
+    padding: 0;
+    font-size: 12px;
+    text-align: right;
 }
 
 /* ------------- Individual Sections ------------- */
@@ -139,12 +142,7 @@ section{
     background-color: var(--bar-color);
 }
 
-#icon{
-    width: 250px;
-    height: 200px;
-    margin: 25px;
-    transition: all 0.4s ease-in-out;
-}
+
 
 
 
@@ -272,6 +270,7 @@ footer {
     bottom: 0;
     width: 100%;
     position: auto;
+    justify-content: center;
     text-align: center;
     padding: 15px 0;
 }
@@ -302,8 +301,7 @@ footer {
     }
 
     a{
-        text-decoration: none;
-        color: var(--font-color-2);
+        color: var(--font-color-1);
     }
 
     .nav-menu{
@@ -334,9 +332,8 @@ footer {
         font-size: 50px;
     }
 
-    p{
-        font-size: 20px;
-    }
+
+
 
     /* ABOUT PAGE */
     .wrapper{

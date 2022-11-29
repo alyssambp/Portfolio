@@ -11,3 +11,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+
+//Scroll down
+// $(function() {
+//     $('a[href*=#]').on('click', function(e) {
+//       e.preventDefault();
+//       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+//     });
+//   });
+
