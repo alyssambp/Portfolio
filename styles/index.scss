@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Lato", Helvetica, sans-serif;
 }
 
@@ -78,10 +77,54 @@ a{
 
 
 
+// Footer
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	width: 100vw;
+	padding-top: 40px;
+}
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	p {
+		max-width: 500px;
+		margin: 10px auto;
+	}
+}
+.socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	a {
+		text-decoration: none;
+		color: #111;
+		padding: 5px;
+		i {
+			font-size: 1.5rem;
+			width: 20px;
+		}
+	}
+}
+  
+
+
+
+
+
 
 
 /* ------------- Responsive Display ------------- */
 @include media('<=tablet') {
+
+    // Hamburger & Navigation
     .hamburger {
 		display: block;
 
@@ -100,6 +143,9 @@ a{
         }
 	}
 
+    .nav-branding {
+        font-size: 1.25rem;
+    }
 
     .nav-menu {
 		position: fixed;
@@ -123,13 +169,6 @@ a{
         .nav-link{
             color: white;
         }
-        
 	}
-
-    
-
-
-
-
 
 }
