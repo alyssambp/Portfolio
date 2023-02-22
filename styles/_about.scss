@@ -3,17 +3,17 @@
 #about {
 	position: relative;
 	display: flex;
-	height: 75vh;
+	height: 65vh;
+	padding: 5em 2em;
+	background-image: url("../img//home.jpg");
+	background-size:cover;
+
 }
-// .about {
-// 	background-image: url("../img/landingpage.jpg");
-// 	background-size: cover;
-// }
 .wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 70px 120px;
+	padding: 70px 100px;
 }
 .image-container {
 	flex: 1;
@@ -40,7 +40,9 @@
 /* ------------- Responsive Display ------------- */
 @media(max-width: $screen-md-min) {
 
-    // About
+    #about{
+		background-position: center center;
+	}
     .wrapper {
         flex-direction: column;
     }

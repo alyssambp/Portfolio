@@ -87,14 +87,17 @@
 #about {
   position: relative;
   display: flex;
-  height: 75vh;
+  height: 65vh;
+  padding: 5em 2em;
+  background-image: url("../img//home.jpg");
+  background-size: cover;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 120px;
+  padding: 70px 100px;
 }
 
 .image-container {
@@ -122,6 +125,9 @@
 
 /* ------------- Responsive Display ------------- */
 @media (max-width: 768px) {
+  #about {
+    background-position: center center;
+  }
   .wrapper {
     flex-direction: column;
   }
@@ -131,13 +137,13 @@
   }
 }
 .work {
-  background-color: #114c59;
+  background-color: #fff;
   justify-content: center;
   text-align: center;
 }
 
 .work h2 {
-  color: #fff;
+  color: #111;
 }
 
 .container {
@@ -259,6 +265,10 @@
   color: white;
 }
 
+.contact {
+  background-color: #114c59;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -334,4 +344,35 @@ h2,
 a,
 p {
   margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 55px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 32px; /* within paragraph */
+  margin-bottom: 30px; /* between paragraphs */
+}
+
+a,
+li {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=index.css.map */
