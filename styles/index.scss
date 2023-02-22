@@ -1,14 +1,15 @@
-// @import "/styles/breakpoints/breakpoints.scss";
 @import "./breakpoints/breakpoints.scss";
+@import "./colors/colors";
 @import 'navbar';
 @import 'about';
+@import 'work';
 @import 'footer';
 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Lato", Helvetica, sans-serif;
+    
 }
 
 html {
@@ -16,8 +17,15 @@ html {
 }
 
 body {
+    font-family: "Lato", Helvetica, sans-serif;
     letter-spacing: 1px;
     line-height: 1;
+    background-color: #fff;
+}
+
+section {
+    padding: 5em 2em; /* Equivalent 80px  32*/
+    height: 100vh; /* vh: 1/100th of the height of the viewport */
 }
 
 li{
@@ -37,6 +45,8 @@ a,
 p {
   margin-bottom: 25px;
 }
+
+
 
 
 

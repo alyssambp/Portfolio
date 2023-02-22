@@ -1,11 +1,14 @@
+@import "./colors/colors";
+
 #about {
 	position: relative;
 	display: flex;
+	height: 75vh;
 }
-.about {
-	background-image: url("img/landingpage.jpg");
-	background-size: cover;
-}
+// .about {
+// 	background-image: url("../img/landingpage.jpg");
+// 	background-size: cover;
+// }
 .wrapper {
 	display: flex;
 	justify-content: center;
@@ -35,7 +38,7 @@
 }
 
 /* ------------- Responsive Display ------------- */
-@include media('<=tablet') {
+@media(max-width: $screen-md-min) {
 
     // About
     .wrapper {

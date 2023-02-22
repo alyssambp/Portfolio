@@ -22,6 +22,7 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 60px;
+	z-index: 1;
 }
 
 .nav-link {
@@ -34,6 +35,7 @@
 .hamburger {
 	display: none;
 	cursor: pointer;
+	z-index: 1;
 }
 
 .bar {
@@ -47,7 +49,7 @@
 }
 
 /* ------------- Responsive Display ------------- */
-@include media('<=tablet') {
+@media(max-width: $screen-md-min) {
 
     // Hamburger & Navigation
     .hamburger {
