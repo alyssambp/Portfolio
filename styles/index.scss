@@ -23,7 +23,7 @@ body {
     font-family: "Lato", Helvetica, sans-serif;
     letter-spacing: 1px;
     line-height: 1;
-    background-color: #fff;
+    background-color: $white;
 }
 
 section {
@@ -61,7 +61,6 @@ p {
     font-size: 24px;
     line-height: 32px; /* within paragraph */
     margin-bottom: 30px; /* between paragraphs */
-    text;
 }
   
 
@@ -71,7 +70,7 @@ li {
 }
 
 
-@media (max-width: $screen-md-min) {
+@include media('<=tablet') {
     h1 {
         font-size: 45px;
     }

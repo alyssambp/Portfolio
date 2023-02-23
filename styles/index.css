@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .container {
   max-width: 1224px;
   width: 92%;
@@ -127,6 +132,7 @@
 @media (max-width: 768px) {
   #about {
     background-position: center center;
+    justify-content: center;
   }
   .wrapper {
     flex-direction: column;
@@ -269,7 +275,7 @@
   background-color: #114c59;
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   left: 0;

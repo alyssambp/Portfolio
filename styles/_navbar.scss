@@ -49,7 +49,7 @@
 }
 
 /* ------------- Responsive Display ------------- */
-@media(max-width: $screen-md-min) {
+@include media('<=tablet') {
 
     // Hamburger & Navigation
     .hamburger {

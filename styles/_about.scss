@@ -38,10 +38,11 @@
 }
 
 /* ------------- Responsive Display ------------- */
-@media(max-width: $screen-md-min) {
+@include media('<=tablet') {
 
     #about{
 		background-position: center center;
+		justify-content: center;
 	}
     .wrapper {
         flex-direction: column;
