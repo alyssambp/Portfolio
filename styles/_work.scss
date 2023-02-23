@@ -1,128 +1,35 @@
-.work {
-    background-color: $white;
-    // padding: 5em 2em; /* Equivalent 80px  32*/
-    // height: 100vh; /* vh: 1/100th of the height of the viewport */
-    justify-content: center;
-    text-align: center;
+.work{
+  text-align: center;
+  justify-content: center;
 }
-  
-.work h2 {
-    color: $black;
+.projects {
+  justify-content: center;
+  text-align: center;
 }
 
-.container {
-    padding: 1rem 1rem;
-    margin: 0 auto;
-    position: relative;
-    background-color: $white;
-    @media (min-width: 1200px) {
-      width: 1000px;
-    }
-    .cards {
-      box-shadow: 1px 1px 10px 2px rgb(185, 185, 185);
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-      @media (702px <= width <= 943px) {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 275px), 1fr));
-      }
-      gap: 1rem;
-      overflow: hidden;
-      .card-1::before {
-        background: url(https://images.unsplash.com/photo-1673372267880-bc6914e446cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTk3Mjc4Mw&ixlib=rb-4.0.3&q=80&w=1080);
-      }
-      .card-2::before {
-        background: url(https://images.unsplash.com/photo-1675266410217-f335c2535545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTk3MjkwNw&ixlib=rb-4.0.3&q=80&w=1080);
-      }
-      .card-3::before {
-        background: url(https://images.unsplash.com/photo-1675223942769-7806d38453aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTk3Mjg4Ng&ixlib=rb-4.0.3&q=80&w=1080);
-      }
-      .card-4::before {
-        background: url(https://images.unsplash.com/photo-1674842342916-361c15254730?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTk3Mjk4Ng&ixlib=rb-4.0.3&q=80&w=1080);
-      }
-      .card {
-        min-height: 20rem;
-        padding: 1rem;
-        background-size: cover;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        transition-duration: 500ms;
-        &:hover {
-          opacity: 1;
-          .text {
-            top: 50%;
-            transform: translate(-50%, -10%);
-          }
-          &::before {
-            transform: scale(1.1) translateY(-4%);
-          }
-          &::after {
-            opacity: 1;
-          }
-        }
-        &::after {
-          position: absolute;
-          content: "";
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-          background-color: rgba(0, 0, 0, 0.5);
-          transition-duration: 500ms;
-          opacity: 0;
-          z-index: -1;
-        }
-        &::before {
-          position: absolute;
-          content: "";
-          background-size: cover;
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-          transition-duration: 500ms;
-          opacity: 1;
-          z-index: -1;
-        }
-      }
-      .text {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 85%;
-        color: $black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        transition-duration: 500ms;
-        text-align: center;
-        h1 {
-          font-size: 1.5rem;
-          white-space: nowrap;
-        }
-        p {
-          font-size: 0.75rem;
-        }
-        a {
-          text-decoration: none;
-          color: #252525;
-          padding: 0.5rem;
-          padding-inline: 1rem;
-          background-color: white;
-          text-transform: uppercase;
-          font-size: 0.75rem;
-          border-radius: 100vmax;
-          font-weight: bold;
-          transition-duration: 300ms;
-          &:hover {
-            background-color: #252525;
-            color: white;
-          }
-        }
-      }
-    }
+
+.projects-container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.projects-container .col {
+  box-shadow: 0 3px 10px $box-shadow;
+  margin-bottom: 16px;
+  padding: 16px;
+  &:hover {
+		background-color: $shell;
+	}
+}
+
+/* ------------- Responsive Display ------------- */
+@include media('<=tablet') {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  
+}
