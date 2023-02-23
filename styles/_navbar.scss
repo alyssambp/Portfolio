@@ -49,7 +49,7 @@
 }
 
 /* ------------- Responsive Display ------------- */
-@include media('<=tablet') {
+@include media('<=tablet')  {
 
     // Hamburger & Navigation
     .hamburger {
