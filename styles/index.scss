@@ -23,8 +23,12 @@ body {
     background-color: $white;
 }
 
-html, body{
-    overflow-x: hidden;
+// html, body{
+//     overflow-x: hidden;
+// }
+
+main {
+    z-index: 0;
 }
 
 section {
