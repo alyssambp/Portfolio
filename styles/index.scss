@@ -52,10 +52,16 @@ p {
 
 h1 {
     font-size: 75px;
+    font-weight: 400;
 }
   
 h2 {
     font-size: 55px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 35px;
 }
 
 p {
@@ -78,6 +84,10 @@ li {
     
     h2 {
         font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
     }
     
     p {
