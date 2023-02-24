@@ -3,11 +3,11 @@
 * Testing
 *
 **/
-.header {
-  overflow: hidden;
-  position: fixed;
+header {
+  position: sticky;
   top: 0;
-  width: 100%;
+  z-index: 999;
+  background-color: #fff;
 }
 
 .container {
@@ -133,6 +133,11 @@
   flex-direction: column;
   text-align: left;
 }
+.text-container p {
+  background: rgba(235, 232, 228, 0.6235294118);
+  box-shadow: 0 0 0 16px rgba(235, 232, 228, 0.6235294118);
+  border-radius: 4px;
+}
 
 /* ------------- Responsive Display ------------- */
 @media (max-width: 768px) {
@@ -158,7 +163,6 @@
   grid-gap: 16px;
   grid-template-columns: repeat(3, 1fr);
   padding: 16px;
-  height: 400px;
   text-align: center;
 }
 
@@ -166,6 +170,7 @@
   box-shadow: 0 3px 10px rgb(185, 185, 185);
   margin-bottom: 16px;
   padding: 16px;
+  border-radius: 4px;
 }
 .projects-container .col:hover {
   background-color: #114c59;
@@ -373,7 +378,7 @@ main {
 
 section {
   padding: 5em 2em; /* Equivalent 80px  32*/
-  height: 100vh; /* vh: 1/100th of the height of the viewport */
+  min-height: 100vh; /* vh: 1/100th of the height of the viewport */
 }
 
 li {

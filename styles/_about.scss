@@ -34,6 +34,12 @@
 	align-items: flex-start;
 	flex-direction: column;
 	text-align: left;
+
+	p{
+		background: #ebe8e49f;
+		box-shadow: 0 0 0 16px #ebe8e49f;
+		border-radius: 4px;
+	}
 }
 
 /* ------------- Responsive Display ------------- */
