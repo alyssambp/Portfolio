@@ -16,7 +16,11 @@
   margin-bottom: 16px;
   padding: 16px;
   &:hover {
-		background-color: $shell;
+		background-color: $darkteal;
+
+    h2, p{
+      color: $white;
+    }
 	}
 }
 
