@@ -92,7 +92,7 @@
 #about {
   position: relative;
   display: flex;
-  height: 65vh;
+  height: 90vh;
   padding: 5em 2em;
   background-image: url("../img//home.jpg");
   background-size: cover;
@@ -147,11 +147,6 @@
   justify-content: center;
 }
 
-.projects {
-  justify-content: center;
-  text-align: center;
-}
-
 .projects-container {
   display: grid;
   grid-gap: 16px;
@@ -181,7 +176,6 @@
   background-color: #114c59;
   position: relative;
   display: flex;
-  height: 65vh;
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
@@ -334,6 +328,7 @@ input[type=submit]:hover {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
