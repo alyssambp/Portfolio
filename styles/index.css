@@ -176,7 +176,9 @@
   font-size: 20px;
 }
 .card-content p {
+  text-align: left;
   font-size: 15px;
+  text-indent: 30px;
 }
 
 /* ------------- Responsive Display ------------- */
