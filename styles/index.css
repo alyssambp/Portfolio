@@ -285,6 +285,7 @@ input[type=submit]:hover {
   }
   .left {
     height: 200px;
+    background-size: contain;
   }
   .right {
     width: 300px;
@@ -344,6 +345,10 @@ body {
   letter-spacing: 1px;
   line-height: 1;
   background-color: #fff;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 section {

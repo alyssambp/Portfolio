@@ -16,14 +16,15 @@
 html {
     scroll-behavior: smooth;
 }
-
-
-
 body {
     font-family: "Lato", Helvetica, sans-serif;
     letter-spacing: 1px;
     line-height: 1;
     background-color: $white;
+}
+
+html, body{
+    overflow-x: hidden;
 }
 
 section {

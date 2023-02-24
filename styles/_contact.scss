@@ -96,14 +96,16 @@ input[type="submit"] {
 
 /* ------------- Responsive Display ------------- */
 @include media('<=tablet') {
-
-    
+	// .contact{
+	// 	width: 100%;
+	// }
     .contact-box {
         grid-template-columns: 1fr;
         width: 300px;
     }
     .left {
         height: 200px;
+		background-size: contain;
     }
     .right {
         width: 300px;
