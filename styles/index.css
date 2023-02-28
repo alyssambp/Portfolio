@@ -7,7 +7,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #fff;
+  background-color: #111;
 }
 
 .container {
@@ -26,6 +26,7 @@ header {
 .nav-branding {
   font-size: 2rem;
   text-transform: none;
+  color: #fff;
 }
 
 .nav-menu {
@@ -38,6 +39,7 @@ header {
 
 .nav-link {
   transition: 0.3s ease-out;
+  color: #fff;
 }
 .nav-link:hover {
   color: #999;
@@ -55,7 +57,7 @@ header {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease;
-  background-color: #111;
+  background-color: #fff;
 }
 
 /* ------------- Responsive Display ------------- */
