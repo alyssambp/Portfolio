@@ -164,18 +164,20 @@ header {
   grid-template-columns: repeat(3, 1fr);
   padding: 16px;
   text-align: center;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
-.projects-container .col {
+.projects-container .card {
   box-shadow: 0 3px 10px rgb(185, 185, 185);
   margin-bottom: 16px;
   padding: 16px;
   border-radius: 4px;
 }
-.projects-container .col:hover {
+.projects-container .card:hover {
   background-color: #114c59;
 }
-.projects-container .col:hover h2, .projects-container .col:hover p {
+.projects-container .card:hover h2, .projects-container .card:hover p {
   color: #fff;
 }
 

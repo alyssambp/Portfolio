@@ -9,9 +9,13 @@
   padding: 16px;
   // height: 400px;
   text-align: center;
+
+  //the following applies text wrapping
+  word-wrap: break-word;
+  white-space: normal;
 }
 
-.projects-container .col {
+.projects-container .card {
   box-shadow: 0 3px 10px $box-shadow;
   margin-bottom: 16px;
   padding: 16px;
