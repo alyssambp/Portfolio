@@ -24,9 +24,10 @@ header {
 }
 
 .nav-branding {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: none;
   color: #fff;
+  padding-top: 25px;
 }
 
 .nav-menu {
