@@ -190,6 +190,7 @@ header {
   height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 16px;
 }
 
 .card-content h3 {
