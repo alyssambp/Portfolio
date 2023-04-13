@@ -94,6 +94,20 @@ input[type="submit"] {
 	}
 }
 
+.form-field.error input {
+    border-color: $error-colour;
+}
+
+.form-field.success input {
+    border-color: $success-colour;
+}
+
+
+.form-field small {
+    color: $error-colour;
+}
+
+
 /* ------------- Responsive Display ------------- */
 @include media('<=tablet') {
 	// .contact{

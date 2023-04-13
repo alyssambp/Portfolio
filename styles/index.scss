@@ -75,11 +75,11 @@ p {
     margin-bottom: 30px; /* between paragraphs */
 }
   
-
 a,
 li {
     font-size: 15px;
 }
+
 
 
 @include media('<=tablet') {

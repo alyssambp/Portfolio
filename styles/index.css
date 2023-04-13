@@ -308,6 +308,18 @@ input[type=submit]:hover {
   background-color: lightcyan;
 }
 
+.form-field.error input {
+  border-color: #dc3545;
+}
+
+.form-field.success input {
+  border-color: #28a745;
+}
+
+.form-field small {
+  color: #dc3545;
+}
+
 /* ------------- Responsive Display ------------- */
 @media (max-width: 768px) {
   .contact-box {

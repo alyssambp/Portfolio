@@ -112,21 +112,32 @@
     
             <div class="right">
               <h2>Get in touch</h2>
-              <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Name" />
-    
-                <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Email" />
-    
-                <label for="message">Message:</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Write your message here..."
-                ></textarea>
-    
-                <input type="submit" value="Submit" />
+              <form action="" id="contact-form" class="form">
+
+                <div class="form-field">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" placeholder="Name" />
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email:</label>
+                  <input type="text" id="email" name="email" placeholder="Email" />
+                  <small></small>
+                </div>
+
+                <div class="form-field">
+                  <label for="message">Message:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+
+                <div class="form-field">
+                  <input type="submit" value="Submit" />
+                </div>
+
               </form>
             </div>
           </div>
