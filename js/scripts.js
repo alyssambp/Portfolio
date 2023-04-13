@@ -15,14 +15,37 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 
 // Form Validation
+const nameEl = document.querySelector('#name');
 const emailEl = document.querySelector('#email');
 const form = document.querySelector('#contact-form');
+
+//check name field
+const checkName = () => {
+
+  let valid = false;
+
+  const min = 3,
+      max = 25;
+
+  const contactname = nameEl.value.trim();
+
+  if (!isRequired(contactname)) {
+      showError(nameEl, 'Name cannot be blank.');
+  } else if (!isBetween(contactname.length, min, max)) {
+      showError(nameEl, `Name must be between ${min} and ${max} characters.`)
+  } else {
+      showSuccess(nameEl);
+      valid = true;
+  }
+  return valid;
+};
 
 // check email field
 const checkEmail = () => {
 
   let valid = false;
   const email = emailEl.value.trim();
+
   if (!isRequired(email)) {
     showError(emailEl, 'Email cannot be blank.')
   } else if (!isEmailValid(email)){
@@ -41,6 +64,7 @@ const isEmailValid = (email) => {
 };
 
 const isRequired = value => value === '' ? false : true;
+const isBetween = (length, min, max) => length < min || length > max ? false : true;
 
 const showError = (input, message) => {
   // get the form-field element
@@ -72,9 +96,11 @@ form.addEventListener('submit', function (e) {
   e.preventDefault();
 
   //validate fields
-  let isEmailValid = checkEmail();
+  let isContactNameValid = checkName(),
+      isEmailValid = checkEmail();
 
-  let isFormValid = isEmailValid;
+  let isFormValid = isContactNameValid &&
+      isEmailValid;
 
   // submit to the server if the form is valid
   if (isFormValid) {
@@ -114,6 +140,9 @@ const debounce = (fn, delay = 500) => {
 
 form.addEventListener('input', debounce(function (e) {
   switch (e.target.id) {
+    case 'name':
+      checkName();
+      break;
       case 'email':
           checkEmail();
           break;
