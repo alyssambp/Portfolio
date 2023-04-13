@@ -264,7 +264,7 @@ input[type=text] {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   resize: vertical;
 }
 
@@ -286,7 +286,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   resize: vertical;
   min-height: 150px;
 }
@@ -295,6 +295,7 @@ input[type=submit] {
   background-color: #114c59;
   color: #fff;
   padding: 12px 20px;
+  margin-top: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;

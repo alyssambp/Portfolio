@@ -17,6 +17,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 // Form Validation
 const nameEl = document.querySelector('#name');
 const emailEl = document.querySelector('#email');
+const messageEl = document.querySelector('#message');
 const form = document.querySelector('#contact-form');
 
 //check name field
@@ -50,6 +51,22 @@ const checkEmail = () => {
     showError(emailEl, 'Email cannot be blank.')
   } else if (!isEmailValid(email)){
     showError(emailEl, 'Email is not valid.')
+  } else {
+    showSuccess(emailEl);
+    valid = true;
+  }
+
+  return valid;
+};
+
+//check message field
+const checkMessageContent = () => {
+
+  let valid = false;
+  const messageContent = messageEl.value.trim();
+
+  if (!isRequired(messageContent)) {
+    showError(messageEl, 'This field cannot be blank.')
   } else {
     showSuccess(emailEl);
     valid = true;
@@ -97,31 +114,18 @@ form.addEventListener('submit', function (e) {
 
   //validate fields
   let isContactNameValid = checkName(),
-      isEmailValid = checkEmail();
+      isEmailValid = checkEmail(),
+      isMessageContentValid = checkMessageContent();
 
   let isFormValid = isContactNameValid &&
-      isEmailValid;
+      isEmailValid &&
+      isMessageContentValid;
 
   // submit to the server if the form is valid
   if (isFormValid) {
 
   }
 
-});
-
-form.addEventListener('submit', function (e) {
-    // prevent the form from submitting
-    e.preventDefault();
-
-    // validate fields
-    let isEmailValid = checkEmail();
-
-    let isFormValid = isEmailValid;
-
-    // submit to the server if the form is valid
-    if (isFormValid) {
-
-    }
 });
 
 const debounce = (fn, delay = 500) => {
@@ -143,9 +147,12 @@ form.addEventListener('input', debounce(function (e) {
     case 'name':
       checkName();
       break;
-      case 'email':
-          checkEmail();
-          break;
+    case 'email':
+        checkEmail();
+        break;
+    case 'message':
+      checkMessageContent();
+      break;
   }
 }));
 
