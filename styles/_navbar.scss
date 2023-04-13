@@ -37,7 +37,7 @@ header {
 	transition: 0.3s ease-out;
 	color: $white;
 	&:hover {
-		color: #999;
+		color: $greybrown;
 	}
 }
 
@@ -89,7 +89,7 @@ header {
 		top: 70px;
 		gap: 0;
 		flex-direction: column;
-		background-color: #111;
+		background-color: $black;
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
@@ -103,7 +103,7 @@ header {
 		margin: 16px 0;
 
         .nav-link{
-            color: white;
+            color: $white;
         }
 	}
 

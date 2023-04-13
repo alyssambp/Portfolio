@@ -22,7 +22,7 @@
 
 .contact-box {
 	max-width: 850px;
-	border: thin solid #f5f5f5;
+	border: thin solid $lightgrey;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
@@ -91,7 +91,7 @@ input[type="submit"] {
 .field {
 	&:focus {
 		border: 2px solid $darkteal;
-		background-color: lightcyan;
+		background-color: $lightcyan;
 	}
 }
 
